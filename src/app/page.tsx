@@ -5,7 +5,7 @@ export default function Home() {
       <p>Evidence Made Clear</p>
       <p>Clear botanical ingredient decisions for nutraceutical teams.</p>
       <a
-        href="https://pytockinog.streamlit.app"
+        href="https://phytocliniq.streamlit.app/"
         target="_blank"
         rel="noreferrer"
         style={{
