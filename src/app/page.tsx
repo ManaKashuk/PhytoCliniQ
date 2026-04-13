@@ -70,7 +70,7 @@ export default function PhytocliniqLandingPage() {
       <header className="sticky top-0 z-30 border-b border-slate-200/70 bg-[#f6f3ec]/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Phytocliniq logo" className="h-16 w-auto object-contain" />
+            <img src="/logo.png" alt="Phytocliniq logo" className="h-17 w-auto object-contain" />
           </div>
 
           <nav className="hidden items-center gap-8 md:flex">
@@ -115,7 +115,7 @@ export default function PhytocliniqLandingPage() {
               Premium botanical intelligence for formulation-aware product decisions.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              Phytocliniq turns scattered botanical research, formulation context, and documentation needs into structured ingredient briefs and comparison reports so scientific, formulation, and product teams can move faster with more clarity.
+              PHYTOCLINIQ turns scattered botanical research, formulation context, and documentation needs into structured ingredient briefs and comparison reports so scientific, formulation, and product teams can move faster with more clarity.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -174,7 +174,7 @@ export default function PhytocliniqLandingPage() {
             Built for teams deciding what to advance.
           </h2>
           <p className="mt-4 text-lg leading-8 text-slate-600">
-            Phytocliniq is not a consumer wellness chatbot. It is a structured internal workflow for evaluating botanical ingredients before deeper formulation, positioning, documentation, and product development decisions move forward.
+            PHYTOCLINIQ is not a consumer wellness chatbot. It is a structured internal workflow for evaluating botanical ingredients before deeper formulation, positioning, documentation, and product development decisions move forward.
           </p>
         </div>
 
@@ -334,7 +334,7 @@ export default function PhytocliniqLandingPage() {
         <div className="grid gap-6 lg:grid-cols-2">
           {[
             [
-              "Is Phytocliniq a consumer app?",
+              "Is PHYTOCLINIQ a consumer app?",
               "No. The product is designed as an internal decision-support workflow for nutraceutical and botanical product teams.",
             ],
             [
@@ -380,7 +380,7 @@ export default function PhytocliniqLandingPage() {
                 Open App
               </a>
               <a
-                href="mailto:mana@phytocliniq.com"
+                href="mailto:hello@phytocliniq.com"
                 className="inline-flex items-center justify-center rounded-2xl border border-slate-600 px-5 py-3 text-sm font-medium text-white transition hover:border-slate-400"
               >
                 Contact Us
