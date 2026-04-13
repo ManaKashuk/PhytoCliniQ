@@ -50,10 +50,6 @@ export default function PhytocliniqLandingPage() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Phytocliniq logo" className="h-10 w-auto rounded-md object-contain" />
-            <div>
-              <div className="text-lg font-semibold tracking-tight">Phytocliniq</div>
-              <div className="text-xs text-slate-500">Evidence Made Clear</div>
-            </div>
           </div>
 
           <nav className="hidden items-center gap-8 md:flex">
