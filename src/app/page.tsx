@@ -394,7 +394,7 @@ export default function PhytocliniqLandingPage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Phytocliniq logo" className="h-8 w-auto object-contain" />
-            <span>© 2026 Phytocliniq. Evidence Made Clear.</span>
+            <span>© 2026 PHYTOCLINIQ. Evidence Made Clear.</span>
           </div>
           <div>Prepared for internal product review workflows. Not legal or regulatory advice.</div>
         </div>
