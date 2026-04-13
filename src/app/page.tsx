@@ -49,7 +49,7 @@ export default function PhytocliniqLandingPage() {
       <header className="sticky top-0 z-30 border-b border-slate-200/80 bg-stone-50/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Phytocliniq logo" className="h-14 w-auto rounded-md object-contain" />
+            <img src="/logo.png" alt="Phytocliniq logo" className="h-16 w-auto rounded-md object-contain" />
           </div>
 
           <nav className="hidden items-center gap-8 md:flex">
