@@ -380,7 +380,7 @@ export default function PhytocliniqLandingPage() {
                 Open App
               </a>
               <a
-                href="mailto:hello@phytocliniq.com"
+                href="mailto:mana@phytocliniq.com"
                 className="inline-flex items-center justify-center rounded-2xl border border-slate-600 px-5 py-3 text-sm font-medium text-white transition hover:border-slate-400"
               >
                 Contact Us
