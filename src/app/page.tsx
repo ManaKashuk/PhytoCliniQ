@@ -55,9 +55,12 @@ export default function PhytocliniqLandingPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(68,124,111,0.12),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(201,179,126,0.16),transparent_28%)]" />
         <div className="relative mx-auto grid max-w-7xl items-center gap-9 px-5 py-10 sm:px-6 sm:py-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-8 lg:py-24">
           <div>
-            <span className="mb-5 inline-flex rounded-full border border-[#c9d8d3] bg-[#edf4f2] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.16em] text-[#2f6f63]">
+            <span className="mb-3 inline-flex rounded-full border border-[#c9d8d3] bg-[#edf4f2] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.16em] text-[#2f6f63]">
               PhytoCliniq · Botanical Scientific Advisory
             </span>
+            <p className="mb-5 max-w-xl text-base font-semibold leading-6 text-[#2f6f63] sm:text-[17px]">
+              Clinical Evidence &amp; Translational Insights for Medicinal Plants
+            </p>
             <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
               Your botanical claims deserve stronger evidence.
             </h1>
@@ -232,7 +235,12 @@ export default function PhytocliniqLandingPage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Phytocliniq logo" className="h-8 w-auto object-contain" />
-            <span>© 2026 PHYTOCLINIQ. Evidence Made Clear.</span>
+            <div className="flex flex-col gap-1">
+              <span>© 2026 PHYTOCLINIQ</span>
+              <span className="max-w-md text-sm leading-6 text-[#2f6f63]">
+                Clinical Evidence &amp; Translational Insights for Medicinal Plants
+              </span>
+            </div>
           </div>
           <div className="flex flex-col gap-2 md:items-end">
               <span>Scientific assessment and preliminary claims-risk review, not legal advice or final label approval.</span>
