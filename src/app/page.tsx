@@ -1,9 +1,6 @@
 
-const DISCOVERY_URL = "mailto:mana@phytocliniq.com?subject=PhytoCliniq%20Discovery%20Call";
-const DISCOVERY_LABEL = "Request a 15-Minute Discovery Call";
-
-// Once your Google Calendar appointment schedule has been tested, replace
-// DISCOVERY_URL with its public booking link and change DISCOVERY_LABEL to "Book a 15-Minute Discovery Call".
+const DISCOVERY_URL = "https://calendar.app.google/gKZQnTRR8rNChf7LA";
+const DISCOVERY_LABEL = "Book a 20-Minute Discovery Call";
 
 export default function PhytocliniqLandingPage() {
   const pricing = [
@@ -94,15 +91,13 @@ export default function PhytocliniqLandingPage() {
 
           <div className="flex items-center gap-3">
             <a
-              href={DISCOVERY_URL}
-              target="_blank"
-              rel="noreferrer"
+              href="mailto:mana@phytocliniq.com"
               className="hidden rounded-2xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-white md:inline-flex"
             >Email Mana</a>
             <a
               href={DISCOVERY_URL}
               className="inline-flex rounded-2xl bg-[#2f6f63] px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-[#275c53]"
-            >Request Call</a>
+            >Book 20-Min Call</a>
           </div>
         </div>
       </header>
@@ -413,7 +408,7 @@ export default function PhytocliniqLandingPage() {
           <div className="mt-4 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Find out what the evidence supports.</h2>
-              <p className="mt-4 max-w-2xl leading-7 text-slate-300">A complimentary 15-minute discovery call helps us determine what your existing regulatory reviewer covers and whether a scientific claims review could add value.</p>
+              <p className="mt-4 max-w-2xl leading-7 text-slate-300">A complimentary 20-minute discovery call helps us determine what your existing regulatory reviewer covers and whether a scientific claims review could add value.</p>
             </div>
             <div className="flex flex-col gap-3">
               <a href={DISCOVERY_URL} className="inline-flex items-center justify-center rounded-2xl bg-teal-600 px-6 py-3 text-center text-sm font-semibold text-white hover:bg-teal-500">{DISCOVERY_LABEL}</a>
