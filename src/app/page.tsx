@@ -142,7 +142,7 @@ export default function PhytocliniqLandingPage() {
             alt="Mana Kashuk in a laboratory setting"
             className="block h-auto w-full object-contain"
           />
-          <figcaption className="border-t border-[#d8e3dd] px-5 py-3 text-sm font-semibold leading-6 text-[#2f6f63]">
+          <figcaption className="border-t border-[#d8e3dd] px-5 py-4 text-center text-sm font-semibold leading-7 text-[#2f6f63]">
             Phytochemistry · Natural products · Pharmacology
           </figcaption>
         </figure>
