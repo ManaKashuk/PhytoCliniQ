@@ -13,9 +13,14 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    // Use the current brand logo, not the previous favicon artwork.
+    // Versioned URLs refresh long-lived Safari/iOS icon caches.
+    icon: [{ url: "/logo.png?v=20261010-brand", type: "image/png" }],
+    shortcut: "/logo.png?v=20261010-brand",
+    apple: [{ url: "/logo.png?v=20261010-brand", type: "image/png" }],
+  },
+  appleWebApp: {
+    title: "PhytoCliniq",
   },
 };
 
