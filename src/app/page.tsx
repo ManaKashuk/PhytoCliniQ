@@ -3,81 +3,17 @@ const DISCOVERY_URL = "https://calendar.app.google/gKZQnTRR8rNChf7LA";
 const DISCOVERY_LABEL = "Book a 20-Minute Discovery Call";
 
 export default function PhytocliniqLandingPage() {
-  const pricing = [
-    {
-      name: "Basic",
-      price: "$49",
-      period: "/month",
-      description: "For solo founders, consultants, and light product exploration.",
-      features: [
-        "Up to 5 ingredient briefs / month",
-        "Up to 2 comparison reports / month",
-        "Markdown export",
-        "Email support",
-      ],
-      cta: "Start Basic",
-    },
-    {
-      name: "Pro",
-      price: "$149",
-      period: "/month",
-      description: "For active nutraceutical teams evaluating ingredients more often.",
-      features: [
-        "Up to 20 ingredient briefs / month",
-        "Up to 10 comparison reports / month",
-        "Priority export workflow",
-        "Saved project history",
-      ],
-      cta: "Start Pro",
-      featured: true,
-    },
-    {
-      name: "Plus",
-      price: "$399",
-      period: "/month",
-      description: "For suppliers, consultants, and premium pilot customers.",
-      features: [
-        "Higher usage limits",
-        "Custom report templates",
-        "Pilot onboarding support",
-        "Priority review and support",
-      ],
-      cta: "Book Plus",
-    },
-  ];
-
   const nav = ["Snapshot", "About", "Technology", "FAQ"];
-
-  const productCards = [
-    {
-      title: "Ingredient Briefs",
-      text: "Generate structured internal briefs with evidence summary, safety context, formulation notes, documentation expectations, positioning notes, and recommendation state.",
-    },
-    {
-      title: "Comparison Reports",
-      text: "Compare botanicals side by side using the same scoring framework so product teams can review options more consistently.",
-    },
-    {
-      title: "Framework",
-      text: "Apply a fixed evaluation lens across evidence strength, ingredient definition, safety context, formulation practicality, positioning readiness, and documentation discipline.",
-    },
-  ];
-
-  const workflow = [
-    ["01", "Select ingredient", "Choose the botanical, use case, and product context."],
-    ["02", "Review structured output", "Get a formatted internal brief instead of a loose AI summary."],
-    ["03", "Advance with discipline", "Use the brief for formulation, scientific, and positioning discussion."],
-  ];
 
   return (
     <main className="min-h-screen bg-[#f6f3ec] text-slate-900">
       <header className="sticky top-0 z-30 border-b border-slate-200/70 bg-[#f6f3ec]/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Phytocliniq logo" className="h-16 w-auto object-contain" />
+            <img src="/logo.png" alt="Phytocliniq logo" className="h-10 w-auto max-w-[140px] object-contain sm:h-14 sm:max-w-none lg:h-16" />
           </div>
 
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav aria-label="Primary sections" className="hidden items-center gap-8 md:flex">
             {nav.map((item) => (
               <a
                 key={item}
@@ -96,16 +32,28 @@ export default function PhytocliniqLandingPage() {
             >Email Mana</a>
             <a
               href={DISCOVERY_URL}
-              className="inline-flex rounded-2xl bg-[#2f6f63] px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-[#275c53]"
+              className="inline-flex shrink-0 items-center justify-center rounded-xl bg-[#2f6f63] px-3 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-[#275c53] sm:px-4 sm:text-sm"
             >Book 20-Min Call</a>
           </div>
         </div>
+        <nav aria-label="Mobile section navigation" className="border-t border-slate-200/80 bg-[#f6f3ec] md:hidden">
+          <div className="mx-auto grid max-w-7xl grid-cols-4 gap-1 px-3 py-2">
+            {nav.map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className="rounded-lg px-1 py-2 text-center text-xs font-semibold text-[#2f6f63] transition hover:bg-[#e6f0ec] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f6f63]"
+              >
+                {item}
+              </a>
+            ))}
+          </div>
+        </nav>
       </header>
-
 
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(68,124,111,0.12),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(201,179,126,0.16),transparent_28%)]" />
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-9 px-5 py-10 sm:px-6 sm:py-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-8 lg:py-24">
           <div>
             <span className="mb-5 inline-flex rounded-full border border-[#c9d8d3] bg-[#edf4f2] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.16em] text-[#2f6f63]">
               PhytoCliniq · Botanical Scientific Advisory
@@ -116,11 +64,11 @@ export default function PhytocliniqLandingPage() {
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
               Scientific evidence and claims-risk reviews for botanical food, wellness, and supplement brands. Understand what published research supports, identify potential claims concerns, and develop more defensible product messaging.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href={DISCOVERY_URL} className="inline-flex items-center justify-center rounded-2xl bg-[#2f6f63] px-6 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#275c53]">{DISCOVERY_LABEL}</a>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a href={DISCOVERY_URL} className="inline-flex w-full items-center justify-center rounded-2xl bg-[#2f6f63] px-6 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#275c53] sm:w-auto">{DISCOVERY_LABEL}</a>
               <a href="#snapshot" className="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-3 text-center text-sm font-semibold text-slate-700 hover:border-[#2f6f63]">Explore the Claim-Risk Snapshot</a>
             </div>
-            <p className="mt-6 text-sm text-slate-500">Human-led scientific review · Defined scope · 7-business-day delivery</p>
+            <p className="mt-6 text-sm text-slate-500">Human-led scientific review · Fixed fee $950 · 7-business-day delivery</p>
           </div>
           <div className="rounded-[32px] border border-[#d8e3dd] bg-white p-7 shadow-xl shadow-slate-200/60">
             <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">The evidence behind the claim</div>
@@ -142,12 +90,15 @@ export default function PhytocliniqLandingPage() {
         </div>
       </section>
 
-      <section id="snapshot" className="border-t border-slate-200 bg-white py-16 lg:py-20">
+      <section id="snapshot" className="scroll-mt-32 border-t border-slate-200 bg-white py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">Flagship service</p>
           <div className="mt-4 grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Claim-Risk Snapshot</h2>
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+                <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Claim-Risk Snapshot</h2>
+                <span className="rounded-full bg-[#e7f2ed] px-4 py-2 text-sm font-semibold text-[#2f6f63]">$950 fixed fee</span>
+              </div>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
                 A focused scientific review of your product's agreed public-facing claims, mapped against published evidence and delivered as a concise written report.
               </p>
@@ -176,7 +127,6 @@ export default function PhytocliniqLandingPage() {
               <p className="text-lg font-semibold">Delivered in 7 business days</p>
               <p className="mt-2 text-sm leading-6 text-slate-600">The timeline starts when the scope is agreed and all required materials are received.</p>
               <a href={DISCOVERY_URL} className="mt-7 inline-flex w-full items-center justify-center rounded-2xl bg-[#2f6f63] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#275c53]">{DISCOVERY_LABEL}</a>
-              <p className="mt-4 text-xs leading-5 text-slate-600">Introductory pilot pricing may be available after a discovery conversation.</p>
             </aside>
           </div>
           <p className="mt-9 border-t border-slate-200 pt-5 text-xs leading-6 text-slate-500">
@@ -185,7 +135,7 @@ export default function PhytocliniqLandingPage() {
         </div>
       </section>
 
-      <section id="about" className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:py-20">
+      <section id="about" className="scroll-mt-32 mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:py-20">
         <div className="relative min-h-[350px] rounded-[30px] bg-[#dfece7] bg-[url('/mana-lab.png')] bg-cover bg-center shadow-lg">
           <span className="absolute bottom-4 left-4 rounded-xl bg-white/95 px-4 py-2 text-xs font-semibold text-[#2f6f63] shadow-sm">Phytochemistry · Natural products · Pharmacology</span>
         </div>
@@ -210,197 +160,50 @@ export default function PhytocliniqLandingPage() {
           </div>
         </div>
       </section>
-      <section id="technology" className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">Technology · Additional capability</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-            Botanical intelligence tools for product teams.
-          </h2>
-          <p className="mt-4 text-lg leading-8 text-slate-600">
-            In addition to the scientific advisory service, PhytoCliniq develops structured internal tools for ingredient briefs and comparison workflows. Software does not replace scientific, regulatory, or legal review.
-          </p>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {productCards.map((item) => (
-            <div key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600">{item.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-6 lg:px-8 lg:py-10">
-        <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="rounded-[30px] border border-slate-200 bg-white p-8 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">Why it matters</p>
-            <h3 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900">
-              Better than a loose AI summary.
-            </h3>
-            <p className="mt-4 text-sm leading-7 text-slate-600">
-              The value is not just summarization. The value is a repeatable decision workflow: ingredient identity, evidence strength, safety context, formulation practicality, positioning readiness, and documentation discipline in one format.
+      <section id="technology" className="scroll-mt-32 border-y border-slate-200 bg-[#eff4f0] px-6 py-10 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">Behind the scientific review</p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">Technology supports the work. Scientific judgment leads it.</h2>
+            <p className="mt-3 text-sm leading-7 text-slate-600">
+              PhytoCliniq uses structured research workflows to organize botanical evidence and is developing internal ingredient-intelligence tools. These tools do not replace scientific assessment or regulatory and legal review.
             </p>
-            <div className="mt-6 rounded-2xl bg-[#f6f3ec] p-5">
-              <div className="text-xs uppercase tracking-[0.16em] text-slate-500">Best-fit users</div>
-              <div className="mt-3 grid gap-3 text-sm text-slate-700">
-                <div>Scientific affairs teams</div>
-                <div>Formulation and product development teams</div>
-                <div>Ingredient suppliers and technical consultants</div>
-              </div>
-            </div>
           </div>
-
-          <div className="rounded-[30px] border border-slate-200 bg-gradient-to-br from-white to-[#eef4f2] p-8 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">Workflow</p>
-            <div className="mt-6 grid gap-4">
-              {workflow.map(([step, title, text]) => (
-                <div key={step} className="flex gap-4 rounded-2xl border border-white/80 bg-white/80 p-5">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#2f6f63] text-sm font-semibold text-white">
-                    {step}
-                  </div>
-                  <div>
-                    <div className="text-base font-semibold text-slate-900">{title}</div>
-                    <div className="mt-1 text-sm leading-6 text-slate-600">{text}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <a href="mailto:mana@phytocliniq.com?subject=PhytoCliniq%20Technology%20Inquiry" className="inline-flex shrink-0 items-center justify-center rounded-xl border border-[#2f6f63] px-5 py-3 text-sm font-semibold text-[#2f6f63] transition hover:bg-[#2f6f63] hover:text-white">
+            Ask about technology
+          </a>
         </div>
       </section>
 
-      <section id="sample-brief" className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
-        <div className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm">
-          <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">Sample brief</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-                Show the output, not just the idea.
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-slate-600">
-                A premium internal decision brief designed for product meetings — clear recommendation, clear scorecard, and concise sections that support faster ingredient review, formulation discussion, and documentation planning.
-              </p>
-
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                {[
-                  "Recommendation banner",
-                  "Ingredient identity block",
-                  "Evidence summary",
-                  "Safety and cautions",
-                  "Positioning notes",
-                  "Documentation notes",
-                ].map((item) => (
-                  <div key={item} className="rounded-2xl bg-[#f6f3ec] px-4 py-3 text-sm text-slate-700">
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-[28px] border border-slate-200 bg-[#faf8f3] p-4 shadow-inner">
-              <img
-                src="/sample-brief-ginger.jpg"
-                alt="Phytocliniq ginger sample brief"
-                className="h-auto w-full rounded-[22px] border border-slate-200 object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="pricing" className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">Pricing</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-            Software plans for ongoing ingredient intelligence.
-          </h2>
-          <p className="mt-4 text-lg leading-8 text-slate-600">
-            Separate from the fixed-fee Claim-Risk Snapshot, these are early-access software tiers for internal botanical-ingredient research workflows. Confirm availability and capabilities before purchasing.
-          </p>
-        </div>
-
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
-          {pricing.map((tier) => (
-            <div
-              key={tier.name}
-              className={`rounded-3xl border p-6 shadow-sm ${
-                tier.featured
-                  ? "border-[#2f6f63] bg-[#2f6f63] text-white shadow-lg shadow-[#244f47]/10"
-                  : "border-slate-200 bg-white text-slate-900"
-              }`}
-            >
-              <div className="flex items-start justify-between">
-                <div>
-                  <h3 className="text-xl font-semibold">{tier.name}</h3>
-                  <p className={`mt-2 text-sm leading-6 ${tier.featured ? "text-teal-50" : "text-slate-600"}`}>
-                    {tier.description}
-                  </p>
-                </div>
-                {tier.featured && (
-                  <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-medium text-white">
-                    Featured tier
-                  </span>
-                )}
-              </div>
-
-              <div className="mt-6 flex items-end gap-1">
-                <span className="text-4xl font-semibold">{tier.price}</span>
-                <span className={`pb-1 text-sm ${tier.featured ? "text-teal-100" : "text-slate-500"}`}>{tier.period}</span>
-              </div>
-
-              <ul className="mt-6 space-y-3 text-sm">
-                {tier.features.map((feature) => (
-                  <li key={feature} className="flex gap-3">
-                    <span className={`mt-0.5 h-2.5 w-2.5 rounded-full ${tier.featured ? "bg-white" : "bg-[#2f6f63]"}`} />
-                    <span className={tier.featured ? "text-teal-50" : "text-slate-700"}>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href="mailto:mana@phytocliniq.com?subject=Software%20Pilot%20Inquiry"
-                className={`mt-8 inline-flex w-full items-center justify-center rounded-2xl px-4 py-3 text-sm font-medium transition ${
-                  tier.featured
-                    ? "bg-white text-[#2f6f63] hover:bg-stone-100"
-                    : "bg-[#2f6f63] text-white hover:bg-[#275c53]"
-                }`}
-              >
-                Ask about this plan
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section id="faq" className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
-        <div className="grid gap-6 lg:grid-cols-2">
+      <section id="faq" className="scroll-mt-32 mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">Frequently asked questions</p>
+        <h2 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">Before we work together</h2>
+        <div className="mt-8 grid gap-5 lg:grid-cols-2">
           {[
             [
-              "Is PHYTOCLINIQ a consumer app?",
-              "No. The product is designed as an internal decision-support workflow for nutraceutical and botanical product teams.",
+              "What does the $950 Claim-Risk Snapshot include?",
+              "One botanical product, up to 10 agreed claims, and up to three agreed brand-controlled pages or marketing materials. You receive a source-linked scientific review, preliminary claims-risk flags, and evidence-aligned wording options.",
             ],
             [
-              "Does it replace legal or regulatory review?",
-              "No. It is intended to support internal product evaluation, not to replace formal regulatory, legal, quality, or manufacturing review.",
+              "Does this replace legal or label-compliance review?",
+              "No. The Snapshot is a scientific evidence and preliminary claims-risk review, not legal advice, comprehensive food or dietary supplement label compliance, or a final regulatory sign-off.",
             ],
             [
-              "Why does this matter for formulation teams?",
-              "Because ingredient decisions are not only about literature. They also affect product fit, supporting documentation, positioning discipline, and the path to formulation.",
+              "Can you assess statements made in an interview or article?",
+              "Third-party press coverage is not automatically a brand claim. We can discuss whether and how that content is used by your brand, then agree in advance if it belongs in the review scope.",
             ],
             [
-              "What does the app produce?",
-              "Ingredient briefs, comparison reports, and a repeatable scoring workflow for internal decision-making across product, formulation, and scientific review functions.",
+              "How quickly will I receive the report?",
+              "The defined-scope written report is delivered within 7 business days after we agree on the scope and receive all required materials. The complimentary 20-minute discovery call helps determine fit before an engagement.",
             ],
           ].map(([q, a]) => (
-            <div key={q} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div key={q} className="rounded-2xl border border-slate-200 bg-white p-6">
               <h3 className="text-lg font-semibold text-slate-900">{q}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600">{a}</p>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{a}</p>
             </div>
           ))}
         </div>
       </section>
-
 
       <section id="contact" className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="rounded-[32px] bg-slate-900 px-8 py-12 text-white">
