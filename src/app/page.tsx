@@ -191,14 +191,16 @@ export default function PhytocliniqLandingPage() {
       </section>
 
       <section id="about" className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:py-20">
-        <div className="relative min-h-[350px] rounded-[30px] bg-[#dfece7] bg-[url('/mana-lab.jpg')] bg-cover bg-center shadow-lg">
+        <div className="relative min-h-[350px] rounded-[30px] bg-[#dfece7] bg-[url('/mana-lab.png')] bg-cover bg-center shadow-lg">
           <span className="absolute bottom-4 left-4 rounded-xl bg-white/95 px-4 py-2 text-xs font-semibold text-[#2f6f63] shadow-sm">Phytochemistry · Natural products · Pharmacology</span>
         </div>
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">The scientist behind the service</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Scientific judgment, grounded in botanical research.</h2>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Mana Kashuk, MSc, MBA</h2>
+          <p className="mt-2 text-base font-semibold text-[#2f6f63]">Founder, PhytoCliniq</p>
+          <p className="mt-1 text-sm font-medium leading-6 text-slate-600">Pharmaceutical Sciences PhD Candidate | Phytochemistry &amp; Pharmacology</p>
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            PhytoCliniq is founded by Mana, a pharmaceutical sciences PhD student working in phytochemistry, natural products, and pharmacology. Her research includes botanical extraction, fractionation, analytical characterization, and pharmacological evidence interpretation.
+            Mana Kashuk is a pharmaceutical sciences doctoral researcher whose work spans phytochemistry, natural products, and pharmacology. Her doctoral research includes botanical extraction, fractionation, analytical characterization, and pharmacological evidence interpretation.
           </p>
           <p className="mt-4 text-base leading-7 text-slate-600">
             PhytoCliniq combines evidence organization with human-led scientific review. Computational tools can accelerate the workflow; they do not replace examination of the underlying studies.
@@ -206,7 +208,11 @@ export default function PhytocliniqLandingPage() {
           <p className="mt-4 text-sm leading-6 text-slate-500">
             Relevant training includes NSF's Dietary Supplement Labeling Compliance course; this is not a credential for comprehensive conventional-food label sign-off.
           </p>
-          <a href="mailto:mana@phytocliniq.com" className="mt-6 inline-block text-sm font-semibold text-[#2f6f63] hover:underline">Contact Mana →</a>
+          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-semibold text-[#2f6f63]">
+            <a href="https://www.linkedin.com/in/manakashuk" target="_blank" rel="noopener noreferrer" className="hover:underline">Mana on LinkedIn ↗</a>
+            <a href="https://www.manakashuk.me/" target="_blank" rel="noopener noreferrer" className="hover:underline">Professional portfolio ↗</a>
+            <a href="mailto:mana@phytocliniq.com" className="hover:underline">Email Mana ↗</a>
+          </div>
         </div>
       </section>
       <section id="technology" className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
@@ -423,7 +429,10 @@ export default function PhytocliniqLandingPage() {
             <img src="/logo.png" alt="Phytocliniq logo" className="h-8 w-auto object-contain" />
             <span>© 2026 PHYTOCLINIQ. Evidence Made Clear.</span>
           </div>
-          <div>Scientific assessment and preliminary claims-risk review, not legal advice or final label approval.</div>
+          <div className="flex flex-col gap-2 md:items-end">
+              <span>Scientific assessment and preliminary claims-risk review, not legal advice or final label approval.</span>
+              <a href="https://www.linkedin.com/in/manakashuk" target="_blank" rel="noopener noreferrer" className="font-medium text-[#2f6f63] hover:underline">Founder: Mana Kashuk · LinkedIn ↗</a>
+            </div>
         </div>
       </footer>
     </main>
