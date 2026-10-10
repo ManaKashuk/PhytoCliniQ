@@ -196,9 +196,11 @@ export default function PhytocliniqLandingPage() {
         </div>
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">The scientist behind the service</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Meet Mana Kashuk.</h2>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Mana Kashuk, MSc, MBA</h2>
+          <p className="mt-2 text-base font-semibold text-[#2f6f63]">Founder, PhytoCliniq</p>
+          <p className="mt-1 text-sm font-medium leading-6 text-slate-600">Pharmaceutical Sciences PhD Candidate | Phytochemistry &amp; Pharmacology</p>
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            Mana Kashuk, MSc, MBA, is the founder of PhytoCliniq and a Pharmaceutical Sciences PhD student working in phytochemistry, natural products, and pharmacology. Her doctoral research includes botanical extraction, fractionation, analytical characterization, and pharmacological evidence interpretation.
+            Mana Kashuk is a pharmaceutical sciences doctoral researcher whose work spans phytochemistry, natural products, and pharmacology. Her doctoral research includes botanical extraction, fractionation, analytical characterization, and pharmacological evidence interpretation.
           </p>
           <p className="mt-4 text-base leading-7 text-slate-600">
             PhytoCliniq combines evidence organization with human-led scientific review. Computational tools can accelerate the workflow; they do not replace examination of the underlying studies.
