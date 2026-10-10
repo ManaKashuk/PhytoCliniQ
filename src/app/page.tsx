@@ -136,9 +136,16 @@ export default function PhytocliniqLandingPage() {
       </section>
 
       <section id="about" className="scroll-mt-32 mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:py-20">
-        <div className="relative min-h-[350px] rounded-[30px] bg-[#dfece7] bg-[url('/mana-lab.png')] bg-cover bg-center shadow-lg">
-          <span className="absolute bottom-4 left-4 rounded-xl bg-white/95 px-4 py-2 text-xs font-semibold text-[#2f6f63] shadow-sm">Phytochemistry · Natural products · Pharmacology</span>
-        </div>
+        <figure className="m-0 overflow-hidden rounded-[30px] border border-[#d8e3dd] bg-[#edf4f2] shadow-lg">
+          <img
+            src="/mana-lab.png"
+            alt="Mana Kashuk in a laboratory setting"
+            className="block h-auto w-full object-contain"
+          />
+          <figcaption className="border-t border-[#d8e3dd] px-5 py-3 text-sm font-semibold leading-6 text-[#2f6f63]">
+            Phytochemistry · Natural products · Pharmacology
+          </figcaption>
+        </figure>
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2f6f63]">The scientist behind the service</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Mana Kashuk, MSc, MBA</h2>
