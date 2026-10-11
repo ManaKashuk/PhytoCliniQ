@@ -141,7 +141,7 @@ export default function PhytocliniqLandingPage() {
       <section id="about" className="scroll-mt-32 mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:py-20">
         <figure className="m-0 overflow-hidden rounded-[30px] border border-[#d6e5d9] bg-[#eef5ee] shadow-lg">
           <img
-            src="/mana-lab.png"
+            src="/mana-consultant.avif"
             alt="Mana Kashuk, pharmaceutical sciences researcher in a laboratory"
             className="block h-auto w-full object-contain"
           />
