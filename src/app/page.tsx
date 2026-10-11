@@ -10,7 +10,7 @@ export default function PhytocliniqLandingPage() {
       <header className="sticky top-0 z-30 border-b border-slate-200/70 bg-[#f7faf7]/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Phytocliniq logo" className="h-10 w-auto max-w-[140px] object-contain sm:h-14 sm:max-w-none lg:h-16" />
+            <img src="/brand-wordmark.svg" alt="PhytoCliniq" className="h-10 w-auto max-w-[140px] object-contain sm:h-14 sm:max-w-none lg:h-16" />
           </div>
 
           <nav aria-label="Primary sections" className="hidden items-center gap-8 md:flex">
@@ -234,7 +234,7 @@ export default function PhytocliniqLandingPage() {
       <footer className="border-t border-slate-200 px-6 py-8 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Phytocliniq logo" className="h-8 w-auto object-contain" />
+            <img src="/brand-wordmark.svg" alt="PhytoCliniq" className="h-8 w-auto object-contain" />
             <div className="flex flex-col gap-1">
               <span>© 2026 PHYTOCLINIQ</span>
               <span className="max-w-md text-sm leading-6 text-[#285f55]">
