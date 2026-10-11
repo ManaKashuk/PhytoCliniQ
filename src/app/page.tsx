@@ -13,7 +13,7 @@ export default function PhytocliniqLandingPage() {
             <img src="/brand-wordmark-approved.png?v=correct-logo-20261011" alt="PhytoCliniq" className="h-9 w-auto max-w-[145px] object-contain sm:h-11 sm:max-w-[185px] md:h-14 md:max-w-none lg:h-16" />
           </div>
 
-          <nav aria-label="Primary sections" className="hidden items-center gap-8 md:flex">
+          <nav aria-label="Primary sections" className="hidden items-center gap-6 lg:flex xl:gap-8">
             {nav.map((item) => (
               <a
                 key={item}
@@ -28,7 +28,7 @@ export default function PhytocliniqLandingPage() {
           <div className="flex items-center gap-3">
             <a
               href="mailto:mana@phytocliniq.com"
-              className="hidden rounded-2xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-white md:inline-flex"
+              className="hidden rounded-2xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-white xl:inline-flex"
             >Email Mana</a>
             <a
               href={DISCOVERY_URL}
@@ -37,11 +37,12 @@ export default function PhytocliniqLandingPage() {
             >Book a Call</a>
             <a
               href={DISCOVERY_URL}
+              aria-label="Book a discovery call"
               className="hidden shrink-0 items-center justify-center rounded-xl bg-[#285f55] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#1c4c45] md:inline-flex"
-            >Book 20-Min Call</a>
+            >Book a Call</a>
           </div>
         </div>
-        <nav aria-label="Mobile section navigation" className="border-t border-slate-200/80 bg-[#f7faf7] md:hidden">
+        <nav aria-label="Mobile and tablet section navigation" className="border-t border-slate-200/80 bg-[#f7faf7] lg:hidden">
           <div className="mx-auto grid max-w-7xl grid-cols-4 gap-1 px-3 py-1">
             {nav.map((item) => (
               <a
