@@ -8,9 +8,9 @@ export default function PhytocliniqLandingPage() {
   return (
     <main className="min-h-screen bg-[#f7faf7] text-slate-900">
       <header className="sticky top-0 z-30 border-b border-slate-200/70 bg-[#f7faf7]/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-3 py-2.5 sm:px-5 md:gap-3 md:px-6 md:py-4 lg:px-8">
           <div className="flex items-center gap-3">
-            <img src="/brand-wordmark.svg" alt="PhytoCliniq" className="h-10 w-auto max-w-[140px] object-contain sm:h-14 sm:max-w-none lg:h-16" />
+            <img src="/brand-wordmark.svg" alt="PhytoCliniq" className="h-9 w-auto max-w-[145px] object-contain sm:h-11 sm:max-w-[185px] md:h-14 md:max-w-none lg:h-16" />
           </div>
 
           <nav aria-label="Primary sections" className="hidden items-center gap-8 md:flex">
@@ -32,12 +32,17 @@ export default function PhytocliniqLandingPage() {
             >Email Mana</a>
             <a
               href={DISCOVERY_URL}
-              className="inline-flex shrink-0 items-center justify-center rounded-xl bg-[#285f55] px-3 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-[#1c4c45] sm:px-4 sm:text-sm"
+              aria-label="Book a discovery call"
+              className="inline-flex min-h-10 shrink-0 items-center rounded-md px-2 text-sm font-semibold text-[#285f55] underline decoration-[#9abca5] underline-offset-4 transition hover:text-[#1c4c45] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#285f55] md:hidden"
+            >Book a Call</a>
+            <a
+              href={DISCOVERY_URL}
+              className="hidden shrink-0 items-center justify-center rounded-xl bg-[#285f55] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#1c4c45] md:inline-flex"
             >Book 20-Min Call</a>
           </div>
         </div>
         <nav aria-label="Mobile section navigation" className="border-t border-slate-200/80 bg-[#f7faf7] md:hidden">
-          <div className="mx-auto grid max-w-7xl grid-cols-4 gap-1 px-3 py-2">
+          <div className="mx-auto grid max-w-7xl grid-cols-4 gap-1 px-3 py-1">
             {nav.map((item) => (
               <a
                 key={item}
