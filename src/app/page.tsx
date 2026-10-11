@@ -98,6 +98,21 @@ export default function PhytocliniqLandingPage() {
         </div>
       </section>
 
+      <section aria-label="Scientific qualifications" className="border-y border-[#d6e5d9] bg-white">
+        <div className="mx-auto grid max-w-7xl gap-0 px-5 py-4 sm:grid-cols-3 sm:gap-4 sm:px-6 lg:px-8">
+          {[
+            ["Doctoral researcher", "Pharmaceutical Sciences PhD Candidate"],
+            ["Botanical research", "Phytochemistry and pharmacology"],
+            ["Relevant training", "NSF Dietary Supplement Labeling Compliance course"],
+          ].map(([heading, detail]) => (
+            <div key={heading} className="border-b border-[#e3eee5] py-3 last:border-b-0 sm:border-b-0 sm:border-r sm:py-2 sm:pr-4 sm:last:border-r-0">
+              <p className="text-xs font-semibold uppercase tracking-[0.13em] text-[#285f55]">{heading}</p>
+              <p className="mt-1 text-sm font-medium leading-6 text-slate-700">{detail}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section id="snapshot" className="scroll-mt-32 border-t border-slate-200 bg-white py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#285f55]">Flagship service</p>
@@ -137,16 +152,98 @@ export default function PhytocliniqLandingPage() {
               <a href={DISCOVERY_URL} className="mt-7 inline-flex w-full items-center justify-center rounded-2xl bg-[#285f55] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#1c4c45]">{DISCOVERY_LABEL}</a>
             </aside>
           </div>
+
+          <div className="mt-10 rounded-[28px] border border-[#d3e4d6] bg-[#f7faf7] p-5 sm:p-7">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#285f55]">See what the review looks like</p>
+                <h3 className="mt-2 text-xl font-semibold text-slate-900 sm:text-2xl">Illustrative Claim-Risk Snapshot excerpt</h3>
+              </div>
+              <span className="self-start rounded-full border border-[#d3e4d6] bg-white px-3 py-1 text-xs font-semibold text-[#285f55]">Fictional product · Not client work</span>
+            </div>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+              An example of the evidence-to-claim reasoning in a paid review, not an assessment of a real brand or a complete report.
+            </p>
+            <details className="group mt-5 rounded-2xl border border-[#d3e4d6] bg-white p-4 sm:p-5">
+              <summary className="cursor-pointer list-item text-sm font-semibold text-[#285f55] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#285f55]">
+                Open the sample claim assessment
+              </summary>
+              <div className="mt-5 grid gap-4 border-t border-[#e3eee5] pt-5 lg:grid-cols-2">
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Hypothetical product and claim</p>
+                    <p className="mt-1 text-sm leading-6 text-slate-800">Ginger sparkling beverage: “Clinically proven to eliminate morning sickness.”</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Research relevance</p>
+                    <p className="mt-1 text-sm leading-7 text-slate-700">
+                      A systematic review of 12 randomized trials (1,278 participants) found improvement in pregnancy-related nausea with orally administered ginger, but not a statistically significant reduction in vomiting. Study preparations and doses cannot automatically substantiate this fictional beverage or an “eliminate” claim.
+                    </p>
+                    <a href="https://doi.org/10.1186/1475-2891-13-20" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex text-sm font-semibold text-[#285f55] underline underline-offset-2">
+                      Source: Viljoen et al., 2014 · DOI ↗
+                    </a>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Preliminary flag</p>
+                    <p className="mt-1 inline-flex rounded-lg bg-[#fbefe7] px-3 py-1 text-sm font-semibold text-[#904b2e]">High priority · Do not use as written</p>
+                    <p className="mt-2 text-sm leading-7 text-slate-700">
+                      The claimed certainty and treatment implication exceed what this evidence establishes for an uncharacterized beverage. Product-specific formulation, dose, audience, and regulatory context require review.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Lower-risk wording direction</p>
+                    <p className="mt-1 text-sm leading-7 text-slate-700">
+                      “Made with ginger root” — only if factually correct. This is an ingredient description, not a substitute therapeutic claim; all proposed copy still requires context-specific review.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p className="mt-5 border-t border-[#e3eee5] pt-4 text-xs leading-6 text-slate-500">
+                Illustrative scientific and preliminary claims-risk reasoning only. Regulatory background:
+                {" "}
+                <a href="https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance" target="_blank" rel="noopener noreferrer" className="font-medium text-[#285f55] underline underline-offset-2">FTC substantiation guidance ↗</a>
+                {" · "}
+                <a href="https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/label-claims-conventional-foods-and-dietary-supplements" target="_blank" rel="noopener noreferrer" className="font-medium text-[#285f55] underline underline-offset-2">FDA food and supplement claim distinctions ↗</a>
+              </p>
+            </details>
+          </div>
           <p className="mt-9 border-t border-slate-200 pt-5 text-xs leading-6 text-slate-500">
             Scientific evidence assessment and preliminary claims-risk identification only. Not legal advice, comprehensive food-label compliance, mandatory-label review, laboratory testing, or final regulatory sign-off. Third-party press coverage is not automatically a brand claim; its inclusion requires an agreed scope and consideration of the brand's use of that content.
           </p>
         </div>
       </section>
 
+      <section id="process" aria-labelledby="process-heading" className="scroll-mt-32 border-b border-slate-200 bg-[#f0f6f1] px-6 py-14 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#285f55]">Simple, defined-scope engagement</p>
+          <h2 id="process-heading" className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">How it works</h2>
+          <p className="mt-3 max-w-3xl text-base leading-7 text-slate-600">A clear process from first conversation to your written evidence review.</p>
+          <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["01", "Book a discovery call", "Use a complimentary 20-minute call to confirm whether a scientific review adds value."],
+              ["02", "Agree on scope", "Confirm the product, up to 10 claims, selected materials, fee and exclusions."],
+              ["03", "Scientific review", "The 7-business-day timeline begins after scope agreement and receipt of required materials."],
+              ["04", "Receive your report", "Get source-linked evidence, prioritized flags, wording directions and written next steps."],
+            ].map(([number, title, detail]) => (
+              <div key={number} className="rounded-2xl border border-[#d3e4d6] bg-white p-5">
+                <span className="text-sm font-semibold text-[#285f55]">{number}</span>
+                <h3 className="mt-3 text-base font-semibold text-slate-900">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{detail}</p>
+              </div>
+            ))}
+          </div>
+          <a href={DISCOVERY_URL} className="mt-7 inline-flex w-full items-center justify-center rounded-xl bg-[#285f55] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1c4c45] sm:w-auto">
+            {DISCOVERY_LABEL}
+          </a>
+        </div>
+      </section>
+
       <section id="about" className="scroll-mt-32 mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:py-20">
         <figure className="m-0 overflow-hidden rounded-[30px] border border-[#d6e5d9] bg-[#eef5ee] shadow-lg">
           <img
-            src="/mana-consultant-hq.avif"
+            src="/mana-kashuk-approved-headshot.jpg?v=20261011-exact"
             alt="Mana Kashuk, founder of PhytoCliniq, wearing a white blazer and sage blouse, with the approved PhytoCliniq logo"
             className="block h-auto w-full object-contain"
           />
