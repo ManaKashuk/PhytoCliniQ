@@ -10,7 +10,7 @@ export default function PhytocliniqLandingPage() {
       <header className="sticky top-0 z-30 border-b border-slate-200/70 bg-[#f7faf7]/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-3 py-2.5 sm:px-5 md:gap-3 md:px-6 md:py-4 lg:px-8">
           <div className="flex items-center gap-3">
-            <img src="/brand-wordmark.svg?v=20261011-original-restored" alt="PhytoCliniq" className="h-9 w-auto max-w-[145px] object-contain sm:h-11 sm:max-w-[185px] md:h-14 md:max-w-none lg:h-16" />
+            <img src="/brand-wordmark-approved.png?v=correct-logo-20261011" alt="PhytoCliniq" className="h-9 w-auto max-w-[145px] object-contain sm:h-11 sm:max-w-[185px] md:h-14 md:max-w-none lg:h-16" />
           </div>
 
           <nav aria-label="Primary sections" className="hidden items-center gap-8 md:flex">
@@ -146,8 +146,8 @@ export default function PhytocliniqLandingPage() {
       <section id="about" className="scroll-mt-32 mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:py-20">
         <figure className="m-0 overflow-hidden rounded-[30px] border border-[#d6e5d9] bg-[#eef5ee] shadow-lg">
           <img
-            src="/mana-consultant-original-logo.avif"
-            alt="Mana Kashuk, founder of PhytoCliniq, in a white blazer and sage blouse, with the original PhytoCliniq logo"
+            src="/mana-consultant-hq.avif"
+            alt="Mana Kashuk, founder of PhytoCliniq, wearing a white blazer and sage blouse, with the approved PhytoCliniq logo"
             className="block h-auto w-full object-contain"
           />
           <figcaption className="border-t border-[#d6e5d9] px-5 py-4 text-center text-sm font-semibold leading-7 text-[#285f55]">
@@ -239,7 +239,7 @@ export default function PhytocliniqLandingPage() {
       <footer className="border-t border-slate-200 px-6 py-8 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
-            <img src="/brand-wordmark.svg?v=20261011-original-restored" alt="PhytoCliniq" className="h-8 w-auto object-contain" />
+            <img src="/brand-wordmark-approved.png?v=correct-logo-20261011" alt="PhytoCliniq" className="h-8 w-auto object-contain" />
             <div className="flex flex-col gap-1">
               <span>© 2026 PHYTOCLINIQ</span>
               <span className="max-w-md text-sm leading-6 text-[#285f55]">
