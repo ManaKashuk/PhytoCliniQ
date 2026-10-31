@@ -3,7 +3,7 @@ const DISCOVERY_URL = "https://calendar.app.google/gKZQnTRR8rNChf7LA";
 const DISCOVERY_LABEL = "Book a 20-Minute Discovery Call";
 
 export default function PhytocliniqLandingPage() {
-  const nav = ["Snapshot", "About", "Technology", "FAQ"];
+  const nav = ["Snapshot", "Peptides", "About", "Technology", "FAQ"];
 
   return (
     <main className="min-h-screen bg-[#f7faf7] text-slate-900">
@@ -43,12 +43,12 @@ export default function PhytocliniqLandingPage() {
           </div>
         </div>
         <nav aria-label="Mobile and tablet section navigation" className="border-t border-slate-200/80 bg-[#f7faf7] lg:hidden">
-          <div className="mx-auto grid max-w-7xl grid-cols-4 gap-1 px-3 py-1">
+          <div className="mx-auto flex max-w-7xl items-center justify-between gap-1 overflow-x-auto px-3 py-1 sm:px-5">
             {nav.map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="rounded-lg px-1 py-2 text-center text-xs font-semibold text-[#285f55] transition hover:bg-[#e3eee5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#285f55]"
+                className="shrink-0 whitespace-nowrap rounded-lg px-2 py-2 text-center text-xs font-semibold text-[#285f55] transition hover:bg-[#e3eee5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#285f55]"
               >
                 {item}
               </a>
@@ -213,6 +213,59 @@ export default function PhytocliniqLandingPage() {
           <p className="mt-9 border-t border-slate-200 pt-5 text-xs leading-6 text-slate-500">
             Scientific evidence assessment and preliminary claims-risk identification only. Not legal advice, comprehensive food-label compliance, mandatory-label review, laboratory testing, or final regulatory sign-off. Third-party press coverage is not automatically a brand claim; its inclusion requires an agreed scope and consideration of the brand's use of that content.
           </p>
+        </div>
+      </section>
+
+
+      <section id="peptides" aria-labelledby="peptides-heading" className="scroll-mt-32 border-y border-[#d6e5d9] bg-[#f7faf7] px-6 py-14 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:gap-8">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#285f55]">Research sourcing · exploratory pilot</p>
+              <h2 id="peptides-heading" className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+                Research peptide sourcing feasibility
+              </h2>
+              <p className="mt-5 text-base leading-8 text-slate-600">
+                PhytoCliniq is exploring a Jordan–U.S. sourcing pathway for custom synthetic peptides used in nonclinical research.
+                We welcome conversations with laboratories and biotechnology teams about their technical specifications and
+                sourcing challenges while we assess potential third-party suppliers.
+              </p>
+            </div>
+            <span className="inline-flex shrink-0 items-center rounded-full border border-[#cbded0] bg-[#e8f2e9] px-4 py-2 text-xs font-semibold text-[#285f55]">
+              Supplier qualification underway
+            </span>
+          </div>
+
+          <div className="mt-9 grid gap-4 md:grid-cols-3">
+            {[
+              ["01", "Define research requirements", "Clarify sequence, quantity, purity, modifications, intended nonclinical use, and required analytical documentation."],
+              ["02", "Assess potential suppliers", "Evaluate stated synthesis capabilities, sample HPLC/MS records, quality documents, and export readiness."],
+              ["03", "Compare sourcing feasibility", "Review quotations, lead times, shipping considerations, and purchasing requirements once credible suppliers are identified."]
+            ].map(([number, title, detail]) => (
+              <div key={number} className="rounded-2xl border border-[#d6e5d9] bg-white p-6 shadow-sm shadow-slate-200/40">
+                <span className="text-xs font-semibold tracking-[0.12em] text-[#285f55]">{number}</span>
+                <h3 className="mt-3 text-lg font-semibold leading-7 text-slate-900">{title}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{detail}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 flex flex-col items-start gap-5 rounded-2xl border border-[#d6e5d9] bg-[#edf5ee] p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
+            <div className="max-w-2xl">
+              <p className="font-semibold text-slate-900">Exploratory inquiries welcome</p>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                This is a feasibility and supplier-discovery initiative, not an active peptide catalog or ordering service.
+                No manufacturing partner has yet been qualified, and no peptide availability, delivery, or analytical quality is guaranteed.
+                Research use only; no human or clinical use.
+              </p>
+            </div>
+            <a
+              href="mailto:mana@phytocliniq.com?subject=Research%20Peptide%20Sourcing%20Inquiry"
+              className="inline-flex w-full shrink-0 items-center justify-center rounded-xl bg-[#285f55] px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#1c4c45] sm:w-auto"
+            >
+              Discuss a research sourcing need
+            </a>
+          </div>
         </div>
       </section>
 
