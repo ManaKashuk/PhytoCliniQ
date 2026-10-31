@@ -1,9 +1,11 @@
 
+import PeptideEvidenceInfographic from "./PeptideEvidenceInfographic";
+
 const DISCOVERY_URL = "https://calendar.app.google/gKZQnTRR8rNChf7LA";
 const DISCOVERY_LABEL = "Book a 20-Minute Discovery Call";
 
 export default function PhytocliniqLandingPage() {
-  const nav = ["Snapshot", "Peptides", "About", "Technology", "FAQ"];
+  const nav = ["Snapshot", "Peptides", "Insights", "About", "Technology", "FAQ"];
 
   return (
     <main className="min-h-screen bg-[#f7faf7] text-slate-900">
@@ -293,6 +295,8 @@ export default function PhytocliniqLandingPage() {
           </a>
         </div>
       </section>
+
+      <PeptideEvidenceInfographic />
 
       <section id="about" className="scroll-mt-32 mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:py-20">
         <figure className="m-0 overflow-hidden rounded-[30px] border border-[#d6e5d9] bg-[#eef5ee] shadow-lg">
